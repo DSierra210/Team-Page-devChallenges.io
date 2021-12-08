@@ -1,0 +1,206 @@
+/* mobile-first, so use min-width on media queries */
+/* starting at 280 x 653, i.e. Dimensions: Galaxy Fold */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  margin-left: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.introduce {
+  margin: 3rem 0 0 -12px;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  font-family: "PT Serif", serif;
+}
+
+h1 {
+  margin: 2rem 0 1.7rem;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+header p {
+  font-size: 0.7rem;
+  margin-bottom: 2.5rem;
+  width: 90%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pic {
+  position: relative;
+  margin: 0%;
+}
+
+.two,
+.four,
+.six {
+  margin-top: 2rem;
+}
+
+img {
+  width: 75%;
+}
+
+.work-title {
+  font-size: 0.6rem;
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: 2%;
+}
+
+.wrapper figcaption {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+footer {
+  padding-top: 3rem;
+}
+
+footer p,
+.footer-link {
+  color: #6c757d;
+  font-size: 0.77rem;
+}
+
+.footer-link:nth-child(2) {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 320px) {
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header p,
+  .wrapper figcaption {
+    font-size: 0.9rem;
+  }
+
+  .work-title {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  header p,
+  .wrapper figcaption {
+    font-size: 1rem;
+  }
+
+  .work-title {
+    font-size: 0.8rem;
+  }
+
+  .two,
+  .four,
+  .six {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3rem;
+    column-gap: 10%;
+  }
+
+  header div:first-child {
+    text-align: center;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 4rem 4rem 7rem;
+  }
+
+  .two,
+  .four,
+  .six {
+    margin-top: 0;
+  }
+
+  .two,
+  .five {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  header p,
+  .wrapper figcaption {
+    font-size: 1.3rem;
+  }
+
+  .work-title {
+    font-size: 1.05rem;
+  }
+
+  .two,
+  .five {
+    margin-top: 5rem;
+  }
+
+  footer p,
+  .footer-link {
+    font-size: 0.97rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  img{
+    width: 60%;
+  }
+}
